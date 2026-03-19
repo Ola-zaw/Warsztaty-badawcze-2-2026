@@ -99,7 +99,7 @@
 **CounterAnimal** is a specialized evaluation dataset introduced in the paper  
 [A Sober Look at the Robustness of CLIPs to Spurious Features](https://proceedings.neurips.cc/paper_files/paper/2024/hash/dd59fad18638714e6c447a3b7b9c4160-Abstract-Conference.html).
 
-The dataset is designed to systematically evaluate the robustness of vision-language models—particularly CLIP—against **spurious correlations**, with a focus on background-dependent biases learned from large-scale web data.
+The dataset is designed to systematically evaluate the robustness of vision-language models (particularly CLIP) against **spurious correlations**, with a focus on background-dependent biases learned from large-scale web data.
 
 #### Motivation
 Traditional robustness benchmarks often exhibit **ImageNet Bias**, meaning they are tailored to older supervised models and fail to capture the weaknesses of modern models like CLIP. Although CLIP appears robust on these benchmarks, such evaluations do not expose the **shortcut learning** behavior induced by web-scale training.
@@ -113,8 +113,6 @@ A **spurious correlation** refers to a false association learned by a model betw
 - **Failure Case:** The model fails when presented with a cow on a beach due to the absence of the expected background.
 
 CounterAnimal evaluates whether models truly recognize animals or rely on such contextual shortcuts (e.g., identifying an ice bear only when it appears on snow).
-
----
 
 #### Dataset Composition
 
@@ -209,7 +207,6 @@ Images were manually filtered using the following criteria:
 3. **Importance of Data Curation**  
    Robustness depends more on dataset quality and diversity than sheer scale.
 
----
 ### Waterbirds
 
 *Warning: this dataset is not really good in terms of quality*.
